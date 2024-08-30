@@ -1,0 +1,170 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.container{
+    display:grid;
+    background-color:goldenrod;
+    padding:2px;
+    box-sizing: border-box;
+    grid-template-areas: 'navigation navigation navigation navigation'
+    'menu main main main'
+    'menu content content content'
+    'footer footer footer footer';
+
+}
+.container>div{
+    margin:3px;
+}
+.container .item1 {
+    background-color: white;
+    color:blueviolet;
+    font-size:large;
+    padding:10px;
+    display:flex;
+    gap:180px;
+    
+}
+.item1{
+    grid-area:navigation;
+}
+.item2{
+    grid-area: menu;
+    height:300px;
+    width:300px;
+    
+}
+.item3{
+    grid-area: main;
+    width:100%;
+}
+.item4{
+    grid-area: content;
+    width:100%;
+}
+.item5{
+    grid-area: footer;
+    
+}
+.item1 .title{
+    width:150px;
+    display:grid;
+    color:blue;
+    text-align: center;
+}
+.item h2{
+    margin-bottom: 0px;
+}
+.item1 h5{
+    font-size:25px;
+    padding-left:px;
+    color:rgb(157, 157, 240);
+    margin-top:0px;
+}
+.search{
+    width:500px;
+    display:flex;
+}
+.search input{
+    width:100%;
+    height:50px;
+    border-radius:30px;
+    margin-top: 9px;
+    text-align: center;
+    font-size: medium;
+}
+.select{
+    width:300px;
+    display:flex;
+    box-sizing: border-box;
+}.select .image{
+    width:80px;
+    display:flex;
+}
+.owner{
+    display:flex;
+    justify-content: space-around;
+}
+.select img{
+    height: 60px;
+    width:80px;
+    padding:5px;
+}
+.select h4 {
+    font-size:15px;
+    width:130px;
+    margin-left:10px;
+    margin-top:15px;
+}
+.select h5{
+    font-size:18px;
+    margin-left:35px;
+}
+.select .ownericon{
+    height:40px;
+    display:flex;
+    margin-top:20px;
+    margin-left:20px;
+}
+.item2{
+    background-color:white;
+    padding:60px;
+    font-size:large;
+}
+.item2 .menu{
+    display: grid;
+    gap:28px;
+    box-sizing: border-box;
+}
+.item2 button{
+    background-color: aqua;
+    height:50px;
+    width:250px;
+    font-size:20px;
+    color:lightcyan;
+    border-radius: 30px;
+}
+.item3{
+    background-color: white;
+    display:flex;
+}
+.item3 .main{
+    display:flex;
+}
+.item3 .image{
+    width:30%;
+
+}
+.item3 .text{
+    width:70%;
+}
+.text ul{
+    padding-left: 20px;
+}
+.item4{
+    background-color:white;
+    display:flex;
+    width:100%;
+}
+.item4 .text{
+    width:70%;
+}
+.item4 .image{
+    width:30%;
+    margin-left:20px;
+}
+.item5{
+    background-color:white;
+    display:flex;
+    padding:15px;
+    justify-content: space-between;
+    align-items:center;
+}
+.item5 .footer {
+    width:50%;
+    text-align:center;
+}
+.item5 .map{
+    width:50%;
+}
+.container
